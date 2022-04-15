@@ -7,4 +7,7 @@ public class ResultItem
     public string DriverName { get; set; }
 
     public int Rank { get; set; }
+
+    public DateTime Time { get; set; }
+
 }
