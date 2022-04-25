@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/App.csproj",
+  "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/App.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,93 +16298,93 @@
   "RootNamespace": "App",
   "Documents": [
     {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Races/RaceList.cshtml",
-      "TargetPath": "Views\\Races\\RaceList.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Races/CreateRace.cshtml",
-      "TargetPath": "Views\\Races\\CreateRace.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/Account/_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Shared/_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/Account/Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/Account/Logout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Shared/_MyLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_MyLayout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Areas/Identity/Pages/Account/Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/Shared/Error.cshtml",
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/Account/Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/Account/Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/Account/_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/Account/Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Races/RaceList.cshtml",
+      "TargetPath": "Views\\Races\\RaceList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Shared/_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Shared/_MyLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_MyLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Races/CreateRace.cshtml",
+      "TargetPath": "Views\\Races\\CreateRace.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

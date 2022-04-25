@@ -14,7 +14,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IRepository<Race>, EFRaceRepository>();
 
-var connectionString = "server=localhost;user=root;password=my_secret_psw;database=app_db";
+var connectionString = "server=localhost;user=root;password=root_password;database=app_db";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
 
 

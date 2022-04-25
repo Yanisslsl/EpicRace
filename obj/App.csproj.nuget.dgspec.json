@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/App.csproj": {}
+    "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/App.csproj": {}
   },
   "projects": {
-    "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/App.csproj": {
+    "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/App.csproj",
+        "projectUniqueName": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/App.csproj",
         "projectName": "App",
-        "projectPath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/App.csproj",
+        "projectPath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/App.csproj",
         "packagesPath": "/Users/yanissloisel/.nuget/packages/",
-        "outputPath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/mvc-B2B 2/App/obj/",
+        "outputPath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yanissloisel/.nuget/NuGet/NuGet.Config"
