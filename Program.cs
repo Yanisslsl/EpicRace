@@ -1,18 +1,17 @@
 using App.Data;
 using App.Middlewares;
 using App.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<AppDbContext>();;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddScoped<IRepository<Race>, EFRaceRepository>();
 
 var connectionString = "server=localhost;user=root;password=root_password;database=app_db";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
@@ -25,6 +24,16 @@ builder.Services.AddDbContext<AppDbContext>(
         .EnableSensitiveDataLogging()
         .EnableDetailedErrors()
 );
+
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Default Lockout settings.
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    options.Lockout.MaxFailedAccessAttempts = 5;
+    options.Lockout.AllowedForNewUsers = true;
+});
+
+
 
 var app = builder.Build();
 

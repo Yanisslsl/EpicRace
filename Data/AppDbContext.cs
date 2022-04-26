@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace App.Data;
 
-public class AppDbContext : IdentityDbContext
+public class AppDbContext : IdentityDbContext<ApplicationUser>
 {
     public DbSet<Race> Races { get; set; }
     public DbSet<RaceResult> RaceResults { get; set; }
