@@ -80,7 +80,7 @@ namespace App.Controllers
                     Race newRace = new()
                     {
                         Name = race.RaceName,
-                        EventDate = race.RaceDate
+                        EventDate = race.EventDate
                     };
 
                     _raceRepository.Add(newRace);

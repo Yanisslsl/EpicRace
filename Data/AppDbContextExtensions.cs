@@ -33,5 +33,45 @@ public static class AppDbContextExtensions
             dbContext.ResultItem.AddRange(resultItems);
             dbContext.SaveChanges();
         }
+        // if (!dbContext.ResultItem.Any())
+        // {
+        // var cars = new List<Car>()
+        // {
+        //     new Car()
+        //     {
+        //         Id = 1,
+        //         Name = "Ferrari",
+        //         Brand = "Ferrari",
+        //         Model = "Ferrari",
+        //         ImageUrl = "https://www.ferrari.com/",
+
+        //         CreationDate = new DateTime(2020, 01, 01)
+        //     },
+        //     new Car()
+        //     {
+        //         Id = 2,
+        //         Name = "Lamborghini",
+        //          Brand = "Ferrari",
+        //         ImageUrl = "https://www.ferrari.com/",
+        //         Model = "Ferrari",
+
+
+        //         CreationDate = new DateTime(2020, 01, 01)
+        //     },
+        //     new Car()
+        //     {
+        //         Id = 3,
+        //         Name = "Bugatti",
+        //          Brand = "Ferrari",
+        //         ImageUrl = "https://www.ferrari.com/",
+
+        //         Model = "Ferrari",
+
+        //         CreationDate = new DateTime(2020, 01, 01)
+        //     }
+        // };
+        // dbContext.Cars.AddRange(cars);
+        // dbContext.SaveChanges();
+        // }
     }
 }

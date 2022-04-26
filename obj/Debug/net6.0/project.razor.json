@@ -16308,6 +16308,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Cars/CarList.cshtml",
+      "TargetPath": "Views\\Cars\\CarList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Cars/CreateCar.cshtml",
+      "TargetPath": "Views\\Cars\\CreateCar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

@@ -3,12 +3,15 @@ using App.Middlewares;
 using App.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<AppDbContext>();;
+
+builder.Services.AddScoped<IRepository<Race>, EFRaceRepository>();
+builder.Services.AddScoped<IRepository<Car>, EFCarRepository>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

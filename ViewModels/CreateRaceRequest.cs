@@ -10,6 +10,20 @@ namespace App.ViewModels
 
         [Required]
         [DataType(DataType.DateTime)]
-        public DateTime RaceDate { get; set; }
+        public DateTime EventDate { get; set; }
+
+        public string? Latitude { get; set; }
+        
+        [Required]
+        public string? Longitude { get; set; }
+
+        public DateTime StartTime { get; set; }
+        public string? ImageUrl { get; set; }
+
+        public string? Result { get; set; }
+
+
+
+
     }
 }
