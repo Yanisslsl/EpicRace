@@ -11,6 +11,8 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 
 builder.Services.AddScoped<IRepository<Race>, EFRaceRepository>();
 builder.Services.AddScoped<IRepository<Car>, EFCarRepository>();
+builder.Services.AddScoped<IRepository<Category>, EFCategoryRepository>();
+
 
 
 // Add services to the container.

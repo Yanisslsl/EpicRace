@@ -7,12 +7,9 @@ namespace App.Models
     {
         public int Id { get; set; } // add required f
         public string? Name { get; init; }
-        public DateTime EventDate { get; init; }
-        public string Description { get; init; }
-        public string ImageUrl { get; set; }
-        public string Color { get; set; }
-
-
+        public string? Description { get; init; }
+        public string? ImageUrl { get; set; }
+        public string? Color { get; set; }
 
     }
 }

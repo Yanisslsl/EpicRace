@@ -18,7 +18,5 @@ namespace App.Models
 
         public string? Result { get; set; }
 
-
-
     }
 }

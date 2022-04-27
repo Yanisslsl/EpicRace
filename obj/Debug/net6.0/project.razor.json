@@ -16348,8 +16348,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Categories/CategoryList.cshtml",
+      "TargetPath": "Views\\Categories\\CategoryList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Areas/Identity/Pages/_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Categories/CreateCategory.cshtml",
+      "TargetPath": "Views\\Categories\\CreateCategory.cshtml",
       "FileKind": "mvc"
     },
     {

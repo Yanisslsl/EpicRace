@@ -51,6 +51,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2Fycy9DcmVhdGVDYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Categories/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DYXRlZ29yeUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Categories/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
