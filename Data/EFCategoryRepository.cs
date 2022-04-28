@@ -29,5 +29,10 @@ namespace App.Data
         {
             return _dbContext.Category.Single(r => r.Id == id);
         }
+
+         public Category GetById(string id)
+        {
+            return _dbContext.Category.Single(r => r.Id == Int32.Parse(id));
+        }
     }
 }

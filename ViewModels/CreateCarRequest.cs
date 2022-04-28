@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using App.Models;
 
 namespace App.ViewModels
 {
@@ -17,6 +18,11 @@ namespace App.ViewModels
        
         [Required]
         public string? Model { get; init; }
+
+        [Required]
+        public int CategoryId { get; init; }
+
+        public Category Category { get; init; }
 
 
 

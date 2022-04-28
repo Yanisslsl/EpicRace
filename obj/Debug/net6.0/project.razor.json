@@ -16308,8 +16308,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/ApplicationUser/UsersList.cshtml",
+      "TargetPath": "Views\\ApplicationUser\\UsersList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Cars/CarList.cshtml",
       "TargetPath": "Views\\Cars\\CarList.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/ApplicationUser/Edit.cshtml",
+      "TargetPath": "Views\\ApplicationUser\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16325,6 +16335,11 @@
     {
       "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/ApplicationUser/CarList.cshtml",
+      "TargetPath": "Views\\ApplicationUser\\CarList.cshtml",
       "FileKind": "mvc"
     },
     {

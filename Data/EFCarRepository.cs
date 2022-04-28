@@ -1,5 +1,7 @@
 
 using App.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace App.Data
 {
@@ -23,12 +25,22 @@ namespace App.Data
 
         public List<Car> GetAll()
         {
-            return _dbContext.Cars.ToList();
+            return _dbContext.Cars.Include(c => c.Category).ToList();
         }
 
         public Car GetById(int id)
         {
             return _dbContext.Cars.Single(r => r.Id == id);
+        }
+
+         public Car GetById(string id)
+        {
+            return _dbContext.Cars.Single(r => r.Id == Int32.Parse(id));
+        }
+
+        public Category getCategory(int id)
+        {
+            return _dbContext.Cars.Include(c => c.Category).Single(r => r.Id == id).Category;
         }
     }
 }

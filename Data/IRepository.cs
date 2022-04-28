@@ -4,6 +4,10 @@ namespace App.Data
     {
         List<TModel> GetAll();
         TModel GetById(int id);
+
+        TModel GetById(string id);
+
+
         TModel Add(TModel model);
         int Commit();
     }

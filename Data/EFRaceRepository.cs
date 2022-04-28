@@ -29,5 +29,10 @@ namespace App.Data
         {
             return _dbContext.Races.Single(r => r.Id == id);
         }
+
+        public Race GetById(string id)
+        {
+            return _dbContext.Races.Single(r => r.Id == Int32.Parse(id));
+        }
     }
 }

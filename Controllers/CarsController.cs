@@ -59,7 +59,12 @@ namespace App.Controllers
                     Car newCar = new()
                     {
                         Name = Car.Name,
-                        CreationDate = Car.CreationDate
+                        CreationDate = Car.CreationDate,
+                        Brand = Car.Brand,
+                        Model = Car.Model,
+                        CategoryId = Car.CategoryId
+
+
                     };
 
                     _carRepository.Add(newCar);
