@@ -1,4 +1,6 @@
 using App.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace App.Data
 {
@@ -22,14 +24,14 @@ namespace App.Data
 
         public List<Race> GetAll()
         {
-            return _dbContext.Races.ToList();
+            return _dbContext.Races.Include(c => c.RaceDrivers).ToList();
         }
 
         public Race GetById(int id)
         {
-            return _dbContext.Races.Single(r => r.Id == id);
+            return _dbContext.Races.Include(u => u.RaceDrivers).ThenInclude(uc => uc.ApplicationUser).FirstOrDefault(x => x.Id == id);
         }
-
+        
         public Race GetById(string id)
         {
             return _dbContext.Races.Single(r => r.Id == Int32.Parse(id));

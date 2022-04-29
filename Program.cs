@@ -13,6 +13,10 @@ builder.Services.AddScoped<IRepository<Race>, EFRaceRepository>();
 builder.Services.AddScoped<IRepository<Car>, EFCarRepository>();
 builder.Services.AddScoped<IRepository<Category>, EFCategoryRepository>();
 builder.Services.AddScoped<IRepository<ApplicationUser>, EFApplicationUserRepository>();
+builder.Services.AddScoped<IRepository<UserCar>, EFUserCarRepository>();
+builder.Services.AddScoped<IRepository<RaceDriver>, EFRaceDriverRepository>();
+
+
 
 
 

@@ -14,8 +14,7 @@ namespace App.Models
         public int LevelPower { get; set; }
         public string? ImageUrl { get; set; }
 
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public ICollection<CarCategory> CarCategories { get; set; }
 
         public ICollection<UserCar> UserCars { get; set; }
 

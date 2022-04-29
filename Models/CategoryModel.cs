@@ -11,7 +11,7 @@ namespace App.Models
         public string? ImageUrl { get; set; }
         public string? Color { get; set; }
 
-        public List<Car> Cars { get; set; }
+        public List<CarCategory> CarCategories { get; set; }
 
     }
 }

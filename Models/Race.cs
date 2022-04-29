@@ -18,5 +18,8 @@ namespace App.Models
 
         public string? Result { get; set; }
 
+        public ICollection<RaceDriver> RaceDrivers { get; set; }
+
+
     }
 }

@@ -25,7 +25,7 @@ namespace App.Data
 
         public List<ApplicationUser> GetAll()
         {
-            return _dbContext.ApplicationUser.ToList();
+            return _dbContext.ApplicationUser.Include(c => c.UserCars).ToList();
         }
 
         public ApplicationUser GetById(int id)
@@ -35,12 +35,12 @@ namespace App.Data
 
          public ApplicationUser GetById(string id)
         {
-            return _dbContext.ApplicationUser.Single(r => r.Id == id.ToString());
+            return _dbContext.ApplicationUser.Include(u => u.UserCars).ThenInclude(uc => uc.Car).FirstOrDefault(x => x.Id == id);
         }
 
-        public Category getCategory(int id)
-        {
-            return _dbContext.Cars.Include(c => c.Category).Single(r => r.Id == id).Category;
-        }
+        // public Category getCategory(int id)
+        // {
+        //     return _dbContext.Cars.Include(c => c.Category).Single(r => r.Id == id).Category;
+        // }
     }
 }

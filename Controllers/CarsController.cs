@@ -62,7 +62,6 @@ namespace App.Controllers
                         CreationDate = Car.CreationDate,
                         Brand = Car.Brand,
                         Model = Car.Model,
-                        CategoryId = Car.CategoryId
 
 
                     };
@@ -109,6 +108,7 @@ namespace App.Controllers
         {
             return View();
         }
+
 
         // POST: Cars/Delete/5
         [HttpPost]

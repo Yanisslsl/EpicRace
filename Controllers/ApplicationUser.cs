@@ -9,9 +9,20 @@ namespace App.Controllers
     {
         private readonly IRepository<ApplicationUser> _applicationUserRepository;
 
-        public ApplicationUserController(IRepository<ApplicationUser> applicationUserRepository)
+        private readonly IRepository<Car> _carRepository;
+
+        private readonly IRepository<UserCar> _userCarRepository;
+
+
+
+        public ApplicationUserController(IRepository<ApplicationUser> applicationUserRepository, IRepository<Car> carRepository, IRepository<UserCar> userCarRepository)
         {
             _applicationUserRepository = applicationUserRepository;
+
+            _carRepository = carRepository;
+
+            _userCarRepository = userCarRepository;
+
         }
         public ActionResult Index()
         {
@@ -91,8 +102,14 @@ namespace App.Controllers
             Console.WriteLine("EDIT ACTION CALLED !");
 
             var User = _applicationUserRepository.GetById(id);
+
+            var cars = _carRepository.GetAll();
+
+            Console.WriteLine(cars);
+
             var driver = new EditUserViewModel(
-               User
+               User, 
+               cars
             );
             return View("Edit", driver);
         }
@@ -115,6 +132,32 @@ namespace App.Controllers
         }
 
         // GET: Cars/Delete/5
+       
+         public ActionResult AddCars(string id,  int carId)
+        {
+            Console.WriteLine("=====11===== !");
+            var User = _applicationUserRepository.GetById(id);
+
+            var car = _carRepository.GetById(carId);
+
+            _userCarRepository.Add(new UserCar()
+            {
+                Car = car,
+                ApplicationUser = User,
+            });
+           
+            Console.WriteLine(User.Id);
+            Console.WriteLine("=====222======== !");
+
+
+
+            var cars = _carRepository.GetAll();
+
+            var driver = new EditUserViewModel(
+               User, cars
+            );
+            return View("Edit", driver);
+        }
         public ActionResult Delete(int id)
         {
             return View();

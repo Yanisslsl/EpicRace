@@ -43,10 +43,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/ApplicationUser/CarList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25Vc2VyL0Nhckxpc3QuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/ApplicationUser/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXBwbGljYXRpb25Vc2VyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -77,6 +73,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Races/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZXMvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/yanissloisel/Dev/Ynov/ASP.NET/EpicRace/Views/Races/RaceList.cshtml]

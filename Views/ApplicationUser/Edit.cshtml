@@ -35,28 +35,62 @@
                 @Html.DisplayFor(modelItem => Model.Driver.LastName)
             </td>
              <td>
-                @Html.DisplayFor(modelItem => Model.Driver.Email)
+                @Html.DisplayFor(modelItem => Model.Driver.Id)
+            </td>
+            <td>
+                @foreach (var item in Model.Driver.UserCars) {
+                @Html.DisplayFor(modelItem => item.Car.Name)
+                }
             </td>
         </tr>
     </tbody>
 </table>
-@* <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CarId" class="control-label"></label>
-                <input asp-for="CarId" class="form-control" />
-                <span asp-validation-for="CarId" class="error-label"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div> *@
+@* @foreach (var item in Model.Cars) {
+                @Html.DisplayFor(modelItem => item.Name)
+                @Html.ActionLink("Add Car", "AddCars", new { id = Model.Driver.Id, carId = "item.Id" })}) 
+} *@
+
+<<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Car Name
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Cars) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @item.CreationDate.ToShortDateString()
+            </td>
+            <td>
+                @foreach (var i in item.CarCategories) {
+                    @i.Category.Name
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Add Car", "AddCars", new { id = Model.Driver.Id, carId = item.Id }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+
 </div>
 

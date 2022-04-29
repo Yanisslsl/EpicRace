@@ -1,0 +1,101 @@
+@model App.ViewModels.EditRaceViewModel
+
+@{
+    ViewData["Title"] = "Edit Driver";
+}
+
+<h1>Edit Driver</h1>
+
+<h4>Race</h4>
+<hr />
+<p>
+    <a asp-action="Create">Create a Car</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Race Name
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Race.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Race.StartTime)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => Model.Race.Id)
+            </td>
+            <td>
+              @Model.Race.EventDate.ToShortDateString()
+            </td>
+            <td>
+              @Model.Race.StartTime.ToShortDateString()
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Race.MaxParticipants)
+            </td>
+            
+            <td>
+                @foreach (var item in Model.Race.RaceDrivers) {
+                  @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)
+                }
+            </td>
+        </tr>
+    </tbody>
+</table>
+@* @foreach (var item in Model.Cars) {
+                @Html.DisplayFor(modelItem => item.Name)
+                @Html.ActionLink("Add Car", "AddCars", new { id = Model.Driver.Id, carId = "item.Id" })}) 
+} *@
+
+<<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Car Name
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Drivers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.ActionLink("Add Driver", "AddDrivers", new { id = Model.Race.Id, driverId = item.Id }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+
+</div>
+

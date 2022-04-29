@@ -12,6 +12,15 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 
     public DbSet<Category> Category { get; set; }
 
+    public DbSet<CarCategory> CarCategory { get; set; }
+
+    public DbSet<UserCar> UserCar { get; set; }
+
+    public DbSet<RaceDriver> RaceDriver { get; set; }
+
+
+
+
     public DbSet<ApplicationUser> ApplicationUser { get; set;}
 
 
@@ -25,9 +34,6 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Car>()
-            .HasOne(p => p.Category)
-            .WithMany(b => b.Cars);
         modelBuilder.Entity<UserCar>()
         .HasKey(bc => new { bc.CarId, bc.ApplicationUserId });  
         modelBuilder.Entity<UserCar>()
@@ -38,6 +44,14 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
             .HasOne(bc => bc.ApplicationUser)
             .WithMany(c => c.UserCars)
             .HasForeignKey(bc => bc.ApplicationUserId);
+         modelBuilder.Entity<CarCategory>()
+            .HasOne(bc => bc.Car)
+            .WithMany(b => b.CarCategories)
+            .HasForeignKey(bc => bc.CarId);  
+        modelBuilder.Entity<CarCategory>()
+            .HasOne(bc => bc.Category)
+            .WithMany(c => c.CarCategories)
+            .HasForeignKey(bc => bc.CategoryId);
     
     }
 }

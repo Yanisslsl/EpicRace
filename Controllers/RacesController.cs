@@ -9,9 +9,21 @@ namespace App.Controllers
     {
         private readonly IRepository<Race> _raceRepository;
 
-        public RacesController(IRepository<Race> raceRepository)
+        private readonly IRepository<ApplicationUser> _driverRepository;
+
+        private readonly IRepository<RaceDriver> _raceDriverRepository;
+
+
+
+        public RacesController(IRepository<Race> raceRepository, IRepository<RaceDriver> racedriverRepository, IRepository<ApplicationUser> driverRepository)
         {
             _raceRepository = raceRepository;
+            _driverRepository = driverRepository;
+            _raceDriverRepository = racedriverRepository;
+
+
+
+
         }
         // GET: Races
         public ActionResult Index()
@@ -100,7 +112,22 @@ namespace App.Controllers
         // GET: Races/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Console.WriteLine(id);
+
+            var race = _raceRepository.GetById(id);
+
+            Console.WriteLine(race.Id);
+
+            Console.WriteLine("=====11===== !");
+
+
+            var drivers = _driverRepository.GetAll();
+
+            var races = new EditRaceViewModel(
+               race,
+               drivers
+            );
+            return View("Edit", races);
         }
 
         // POST: Races/Edit/5
@@ -118,6 +145,38 @@ namespace App.Controllers
             {
                 return View();
             }
+        }
+            public ActionResult AddDrivers(int id,  string driverId)
+        {
+            Console.WriteLine("=====11===== !");
+            var race = _raceRepository.GetById(id);
+
+            var driver = _driverRepository.GetById(driverId);
+            Console.WriteLine(race.Id);
+            Console.WriteLine(race.Id);
+
+
+            Console.WriteLine("=====11===== !");
+
+
+            _raceDriverRepository.Add(new RaceDriver()
+            {
+                Race = race,
+                ApplicationUser = driver,
+            });
+           
+           _raceDriverRepository.Commit();
+
+
+
+
+            var drivers = _driverRepository.GetAll();
+
+            var races = new EditRaceViewModel(
+               race,
+               drivers
+            );
+            return View("Edit", races);
         }
 
         // GET: Races/Delete/5

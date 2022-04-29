@@ -15,4 +15,7 @@ public class ApplicationUser : IdentityUser
 
     public ICollection<UserCar> UserCars { get; set; }
 
+    public ICollection<RaceDriver> RaceDrivers { get; set; }
+
+
 }

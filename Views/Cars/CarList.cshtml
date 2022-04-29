@@ -34,11 +34,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-             <td>
-                @Html.DisplayFor(modelItem => item.Category.Description)
-            </td>
             <td>
                 @item.CreationDate.ToShortDateString()
+            </td>
+            <td>
+                @foreach (var i in item.CarCategories) {
+                    @i.Category.Name
+                }
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
