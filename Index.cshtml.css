@@ -1,0 +1,13 @@
+.carousel-races {
+    display: flex;
+    overflow-x:  scroll;
+    padding: 1rem 0;
+}
+
+.carousel-race {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    margin-left: 1rem;
+}
+
